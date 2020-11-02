@@ -1,0 +1,35 @@
+{
+  "self": {
+    "href": "https://production.api.playtrailmakers.com/api/servers/%id%"
+  },
+  "join": {
+    "href": "https://production.api.playtrailmakers.com/api/servers/%id%/join"
+  },
+  "updateXboxSession": {
+    "href": "https://production.api.playtrailmakers.com/api/servers/%id%/updateXboxSession"
+  },
+  "id": "%id%",
+  "requesterId": "%prob_owner_id%",
+  "platform": "pc",
+  "settings": {
+    "name": "viktorf1",
+    "version": "1.1.0.32665_ReleaseCandidate_MultiplayerQuality",
+    "maxPlayers": 2,
+    "isPasswordProtected": false,
+    "mapName": "WLD_Exploration",
+    "gamemodeName": "Exploration",
+    "gamemodeDataBlob": "{\"isGameModeEnabled\":true,\"stealCrownOnCollision\":true,\"timelimitedReign\":true}",
+    "maxPowerCores": -1,
+    "bannedBlocks": [],
+    "selectedRegion": "EU",
+    "gameplayType": "Exploration"
+  },
+  "status": {
+    "currentPlayers": 0,
+    "status": "UntrustedRequest",
+    "stepProgress": 0.0,
+    "isModsEnabled": false
+  },
+  "serverLoginUsername": "IamSureThisWillBeNeeded",
+  "serverLoginPassword": "IamSureThisPassowrdHereWillBeneededToo"
+}

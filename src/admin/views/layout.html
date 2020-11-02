@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="h-full">
+  <head>
+    <title>{% block title %}Trailmakers - Community Server{% endblock %}</title>
+    <link rel="stylesheet" href="./css/app.css">
+    {% block head %}{% endblock %}
+  </head>
+  <body class="bg-gray-300 flex flex-col">
+    <div>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="flex-grow">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    <div>
+      <footer class="page-footer">
+        <div class="footer-copyright">
+          <div class="container">
+          Trailmakers - Community Server
+          <a class="grey-text text-lighten-4 right" href="#!">Github</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    {% block script %}
+    {% endblock %}
+  </body>
+</html>

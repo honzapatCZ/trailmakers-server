@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="h-full">
+  <head>
+    <title>Debugger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.2.4.min.js"></script>     
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github-gist.min.css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+            $(document).ready(function(){
+               $( function() {
+                   $( "#tabs1" ).tabs();    
+                   $( "#tabs2" ).tabs();    
+                               
+               } );
+            });
+            async function getDetails(index) {
+                path = location.protocol + '//' + location.host + location.pathname + (location.pathname.endsWith("/") ? "" : "/") +index;
+                console.log(path);
+               try {
+                   const response = await axios.get(path);                
+                   console.log(response);
+               } catch (error) {
+                   console.error(error);
+               }
+           }
+   
+    </script>
+  </head>
+  <body class="bg-gray-300 flex flex-col">
+    <div class="flex-grow h-screen bg-grey flex ">
+        <div class="w-2/5 overflow-y-auto bg-white rounded shadow-md m-4 mr-2">
+            {% for i in range(0, 30) -%}            
+                <span onclick="getDetails('{{i}}')">
+                    <div tabindex="0" class="group flex cursor-pointer border-b font-bold bg-white hover:bg-gray-200 active:bg-gray-300">
+                       <span class="flex-no-shrink py-4 px-2 text-xs text-center border-r border-grey-lighter " style="width: 40px;">{{ i }}</span>
+                       <span class="flex-no-shrink py-3 px-2 font-mono text-center border-r border-grey-lighter text-blue-600" >POST</span>
+                       <span class="flex-grow py-3 px-2 overflow-x-hidden font-mono" >/sample/post/request/</span>
+                       
+                    </div>
+                </span>
+            {%- endfor %}
+        </div>
+        <div class="w-3/5 flex flex-col mr-4 overflow-y-auto overflow-x-hidden">
+            <div class="flex-1 flex flex-col mt-4 mb-2 bg-white rounded shadow-md h-0" >
+                <ul class="tabs mx-2 mt-2" id="tabs1">
+                    <li class="tab col s2"><a class="active" href="#test1">Headers</a></li>
+                    <li class="tab col s2"><a href="#test2">Body</a></li>
+                    <li class="tab col s2"><a href="#test3">Authorization</a></li>
+                    <li class="tab col s2"><a href="#test4">Cookies</a></li>
+                    <li class="tab col s2"><a href="#test5">Raw</a></li>
+                  </ul>
+                <div id="test1" class="flex-1 overflow-auto m-2 rounded bg-gray-300">
+                    <pre >
+                        <code>
+    {
+        "self": {
+            "href": "https://production.api.playtrailmakers.com/api/servers/9849df32-8515-48bb-b3cc-c7c8b14bcd1b/join/f0ea9883-fcab-46b5-b4d9-676d03479120"
+        },
+        "server": {
+          "href": "https://production.api.playtrailmakers.com/api/servers/9849df32-8515-48bb-b3cc-c7c8b14bcd1b?ticketId=f0ea9883-fcab-46b5-b4d9-676d03479120"
+        },
+        "status": "Accepted",
+        "secretId": "OTg0OWRmMzItODUxNS00OGJiLWIzY2MtYzdjOGIxNGJjZDFiLS01ZWY4Zjk1OTM0MzY5MDAwMDljODE1OTQ=",
+        "secret": "rqkv0mRtIQfFpV/u233PsBfHhrosPvCdNjmsh6ouu2c="
+    }
+                        </code>
+                    </pre>              
+                </div>
+                <div id="test2" class="flex-1 overflow-auto m-2 rounded bg-gray-300">
+                    <div class="p-2 ">
+                        Content
+                    </div>                
+                </div>
+                <div id="test3" class="flex-1 overflow-auto m-2 rounded bg-gray-300">
+                    <div class="p-2 ">
+                        Content
+                    </div>                
+                </div>
+                <div id="test4" class="flex-1 overflow-auto m-2 rounded bg-gray-300">
+                    <div class="p-2 ">
+                        Content
+                    </div>                
+                </div>
+                <div id="test5" class="flex-1 overflow-auto m-2 rounded bg-gray-300">
+                    <div class="p-2 ">
+                        Content
+                    </div>                
+                </div>
+            </div>
+            <div class="flex-1 flex flex-col mt-2 mb-4 bg-white rounded shadow-md h-0" >
+                <ul class="tabs mx-2 mt-2" id="tabs2">
+                    <li class="tab col s2"><a class="active" href="#2test1">Headers</a></li>
+                    <li class="tab col s2"><a href="#2test2">Body</a></li>
+                    <li class="tab col s2"><a href="#2test3">Authorization</a></li>
+                    <li class="tab col s2"><a href="#2test4">Cookies</a></li>
+                    <li class="tab col s2"><a href="#2test5">Raw</a></li>
+                  </ul>
+                <div id="2test1" class="flex-1 overflow-auto m-2 rounded bg-gray-300">
+                    <div class="p-2 ">
+                        Content
+                    </div>                
+                </div>
+                <div id="2test2" class="flex-1 overflow-auto m-2 rounded bg-gray-300">
+                    <div class="p-2 ">
+                        Content
+                    </div>                
+                </div>
+                <div id="2test3" class="flex-1 overflow-auto m-2 rounded bg-gray-300">
+                    <div class="p-2 ">
+                        Content
+                    </div>                
+                </div>
+                <div id="2test4" class="flex-1 overflow-auto m-2 rounded bg-gray-300">
+                    <div class="p-2 ">
+                        Content
+                    </div>                
+                </div>
+                <div id="2test5" class="flex-1 overflow-auto m-2 rounded bg-gray-300">
+                    <div class="p-2 ">
+                        Content
+                    </div>                
+                </div>
+            </div>
+       </div>
+     </div>
+  </body>
+</html>

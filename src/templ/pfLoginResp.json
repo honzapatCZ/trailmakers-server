@@ -1,0 +1,32 @@
+{
+   "code":200,
+   "status":"OK",
+   "data":{
+      "SessionTicket":"%fill_steamId%--0000000000000000-0000-000000000000000-00000000000000000000000000000000000000000000",
+      "PlayFabId":"%fill_steamId%",
+      "NewlyCreated":false,
+      "SettingsForUser":{
+         "NeedsAttribution":false,
+         "GatherDeviceInfo":true,
+         "GatherFocusInfo":true
+      },
+      "LastLoginTime":"2020-07-02T14:20:21.16Z",
+      "EntityToken":{
+         "EntityToken":"base64hashofsomething",
+         "TokenExpiration":"2100-01-01T24:00:00.000Z",
+         "Entity":{
+            "Id":"someId",
+            "Type":"title_player_account",
+            "TypeString":"title_player_account"
+         }
+      },
+      "TreatmentAssignment":{
+         "Variants":[
+
+         ],
+         "Variables":[
+
+         ]
+      }
+   }
+}

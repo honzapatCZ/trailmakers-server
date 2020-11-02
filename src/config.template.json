@@ -1,0 +1,7 @@
+{
+    "steamApiKey" : "steamApiKeyhere",
+    "steamAppIDToCheck" : "585420",
+    "steamIdToIP" : {
+        "xxxxxxxxxxxxxxxxx": "::ffff:127.0.0.1"
+    }
+}

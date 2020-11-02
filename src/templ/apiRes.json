@@ -1,0 +1,47 @@
+{
+		"version": {
+		  "href": "https://production.api.playtrailmakers.com/api/version"
+		},
+		"me": {
+		  "href": "https://production.api.playtrailmakers.com/api/me"
+		},
+		"bucketList": {
+		  "href": "https://production.api.playtrailmakers.com/api/bucketlist"
+		},
+		"serverList": {
+		  "href": "https://production.api.playtrailmakers.com/api/serverlist"
+		},
+		"gallery": {
+		  "href": "https://production.api.playtrailmakers.com/api/gallery"
+		},
+		"leaderboards": {
+		  "href": "https://production.api.playtrailmakers.com/api/leaderboards"
+		},
+		"settings": {
+		  "href": "https://production.api.playtrailmakers.com/api/settings"
+		},
+		"servermanagers": {
+		  "href": "https://production.api.playtrailmakers.com/api/servermanagers"
+		},
+		"servermanagerstmpuser": {
+		  "href": "https://production.api.playtrailmakers.com/api/servermanagers/newuser"
+		},
+		"servernotifications": {
+		  "href": "https://production.api.playtrailmakers.com/api/notifications/gameservers"
+		},
+		"servers": {
+		  "href": "https://production.api.playtrailmakers.com/api/servers"
+		},
+		"requestserver": {
+		  "href": "https://production.api.playtrailmakers.com/api/servers/request"
+		},
+		"modt": {
+		  "href": "https://production.api.playtrailmakers.com/api/settings/modt"
+		},
+		"managerregionstats": {
+		  "href": "https://production.api.playtrailmakers.com/api/servermanagers/stats"
+		},
+		"tmpprofile": {
+		  "href": "https://production.api.playtrailmakers.com/api/profiles/tempuser"
+		}
+	  }

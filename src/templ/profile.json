@@ -1,0 +1,72 @@
+{
+   "id":"fillIn",
+   "name":null,
+   "primaryColor":{
+      "r":0.12941177,
+      "g":0.5882353,
+      "b":0.9529412,
+      "a":1.0
+   },
+   "secondaryColor":{
+      "r":1.0,
+      "g":0.59607846,
+      "b":0.0,
+      "a":1.0
+   },
+   "model":"male",
+   "defaultBlockSkin":null,
+   "characterHat":null,
+   "progress":{
+      "sandboxModeUnlocked":false,
+      "unlockedItemIds":[
+
+      ],
+      "tutorialUnlocked":false,
+      "untrustedUnlockedBlockIds":[
+
+      ],
+      "trustedUnlockedBlockIds":[
+
+      ],
+      "experiencePoints":0,
+      "credits":0,
+      "gameplayPoints":0,
+      "challengeDatas":{
+
+      },
+      "lastWorldSpawn":{
+
+      },
+      "dlc":null
+   },
+   "metric":{
+      "hasSeenReviewBox":false,
+      "playtimeInGameInMinutes":0.0,
+      "hasStartedDemo":false,
+      "hasStartedLive":false,
+      "raceTopTimes":{
+
+      },
+      "allowDataCollection":false
+   },
+   "email":null,
+   "version":3,
+   "self":{
+      "href":"https://production.api.playtrailmakers.com/api/profiles/5eda5ff9dc92b6000933d25c"
+   },
+   "rewards":{
+      "href":"https://production.api.playtrailmakers.com/api/profiles/5eda5ff9dc92b6000933d25c/rewards"
+   },
+   "invite":{
+      "href":"https://production.api.playtrailmakers.com/api/profiles/5eda5ff9dc92b6000933d25c/invite"
+   },
+   "bucketList":{
+      "href":"https://production.api.playtrailmakers.com/api/profiles/5eda5ff9dc92b6000933d25c/bucketlist"
+   },
+   "gallery":{
+      "href":"https://production.api.playtrailmakers.com/api/profiles/5eda5ff9dc92b6000933d25c/gallery"
+   },
+   "notifications":{
+      "href":"https://production.api.playtrailmakers.com/api/notifications/profiles"
+   }
+}
